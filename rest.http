@@ -1,0 +1,35 @@
+ GET  http://localhost:3000
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2Nzk2NTE4NjQsImV4cCI6MTY3OTY1MTg3OSwiYXVkIjoiNjQxZDFmYTc3ZGU1NTdkYzA3M2Q1MzQ4IiwiaXNzIjoiYWJoaS5jb20ifQ.cdvhL9Xlt-wtPX8XqeL92-CoKPCFx7ScZdu42MkSZFM
+
+###
+
+POST  http://localhost:3000/api/login
+Content-Type: application/json
+
+{
+    "email": "abhiy@gmail.com",
+   "password": "123456"
+}
+
+###
+
+POST http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+    "email": "abhiy@gmail.com",
+   "password": "123456"
+}
+###
+
+### Refresh token route
+
+POST http://localhost:3000/api/refresh-token
+Content-Type: application/json
+{
+    "refreshToken": 
+}
+
+###
+
+DELETE http://localhost:3000/api/logout
